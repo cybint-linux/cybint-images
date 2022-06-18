@@ -1,0 +1,16 @@
+# #!/bin/sh
+
+set -e
+
+USERNAME='cybint'
+
+# Password 'cybint'
+PASSWORD='$y$j9T$kSryTKlmQzb33qFHUuDHd1$4IF.QO.Kmof.5blhOPbvO0htBsQMN7P395TebuZDde0'
+
+
+if /sbin/usermod -p $PASSWORD $USERNAME &>/dev/null; then
+    echo "$USERNAME user updated"
+else
+    echo "Creating user $USERNAME"
+	/sbin/useradd  -m -p $PASSWORD $USERNAME
+fi

@@ -1,0 +1,37 @@
+#!/bin/sh
+
+set -e
+
+ARCHITECTURE="$(basename $PWD)"
+
+
+ARCH="${ARCHITECTURE:=$(dpkg --print-architecture)}" 
+
+case $ARCH in
+	amd64)
+		_SOURCE="true"
+		;;
+
+	i386)
+		_SOURCE="false"
+		;;
+esac
+
+# Use or create global cache
+if [[ ! -f ./cache ]]; then
+	mkdir -p ../../cache
+	ln -sd ../../cache ./cache
+fi
+
+
+lb config noauto \
+	--clean \
+	--color \
+	--architectures $ARCH \
+	--ignore-system-defaults \
+	--mode debian \
+	--debian-installer live \
+	--image-name "cybint" \
+	--linux-packages "linux-image linux-headers" \
+	--source "${_SOURCE}" \
+"${@}"

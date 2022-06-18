@@ -1,0 +1,19 @@
+xfce4
+tasksel
+lightdm
+qterminal
+
+xorg
+xserver-xorg-input-all
+xserver-xorg-video-all
+
+
+# cybint-themes
+cybint-menu
+cybint-docs
+
+plymouth
+plymouth-x11
+
+gstreamer1.0-vaapi
+i965-va-driver

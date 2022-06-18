@@ -1,0 +1,8 @@
+# CYBINT Linux
+deb http://repo.cybint-linux.com/cybint/ cybint main
+#deb-src http://repo.cybint-linux.com/cybint/ cybint main
+
+# Security
+#deb http://security.debian.org/ bookworm-security main
+#deb-src http://security.debian.org/ bookworm-security main
+
