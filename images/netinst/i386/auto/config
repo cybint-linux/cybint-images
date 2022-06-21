@@ -5,9 +5,9 @@ set -e
 ARCHITECTURE="$(basename $PWD)"
 ARCH="${ARCHITECTURE:=$(dpkg --print-architecture)}"
 
-if [ ! -e "./cache" ]; then
-    ln -s ../../../cache cache
-fi
+# if [ ! -e "./cache" ]; then
+#     ln -s ../../../cache cache
+# fi
 
 if [ ! -e "/usr/share/live/build/data/debian-cd/cybint" ]; then
     ln -s /usr/share/live/build/data/debian-cd/squeeze /usr/share/live/build/data/debian-cd/cybint

@@ -3,5 +3,5 @@ live-config
 live-config-systemd
 
 # cybint-themes
-cybint-menu
-cybint-docs
+# cybint-menu
+# cybint-docs

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# It is used in multiple places to finish configuring the target system
+
+sources_list() {
+    if grep -q '^deb ' /etc/apt/sources.list; then
+	echo "INFO: sources.list is configured, everything is fine"
+	return
+    fi
+
+    echo "INFO: sources.list is empty, setting up a default one for CYBINT"
+
+    cat >/etc/apt/sources.list <<END
+# CYBINT Repository
+deb http://repo.cybint-linux.com/cybint cybint main contrib non-free
+
+# Additional line for source packages
+# deb-src http://repo.cybint-linux.com/cybint cybint main contrib non-free
+END
+    apt-get update
+}
+
+sources_list

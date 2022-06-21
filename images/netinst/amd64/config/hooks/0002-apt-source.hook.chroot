@@ -6,8 +6,4 @@ cat > /etc/apt/sources.list <<-EOF
 deb http://repo.cybint-linux.com/cybint/ cybint main contrib non-free
 deb-src http://repo.cybint-linux.com/cybint/ cybint main main contrib non-free
 
-# Security
-#deb http://security.debian.org/ bookworm main
-#deb-src http://security.debian.org/ bookworm main
-
 EOF

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+
+# Avoid configuring multiple times in case persistence is enabled
+if [ -e /var/lib/live/config/cybint-user-setup ]; then
+    exit 0
+fi
+
+# Set "kali" as password for the user cybint
+usermod -p 'AqLUsDitNnTsw' cybint
+
+
+# Remember that this script has been run
+touch /var/lib/live/config/cybint-user-setup

@@ -1,8 +1,8 @@
 live-boot
 live-config
 live-config-systemd
+user-setup
+sudo
 
-
-
-cybint-menu
-cybint-docs
+# cybint-menu
+# cybint-docs

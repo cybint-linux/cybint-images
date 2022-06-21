@@ -9,8 +9,8 @@ xserver-xorg-video-all
 
 
 # cybint-themes
-cybint-menu
-cybint-docs
+# cybint-menu
+# cybint-docs
 
 plymouth
 plymouth-x11
