@@ -1,6 +1,3 @@
-#debian-installer-launcher
-
-
-
-# cybint-menu
-# cybint-docs
+debian-installer-launcher
+linux-image-5.18.0
+firmware-linux

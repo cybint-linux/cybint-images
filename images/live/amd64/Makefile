@@ -6,7 +6,7 @@ help:
 clean: ## Remove build files
 	@sudo lb clean
 
-build: ## Build ISO image
+build: clean ## Build ISO image
 	@sudo lb build
 
 run: ## Run in a virtual machine

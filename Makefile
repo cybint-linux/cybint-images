@@ -11,8 +11,11 @@ clean: ## Remove build artifacts
 build: ## Build CYBINT images
 	@for dir in $(IMAGES); do $(MAKE) -C $$dir build; done
 
-live-amd64: ## Build live/amd64 image
-	@$(MAKE) -C images/live/amd64 build
+amd64: ## Build amd64 image
+	@$(MAKE) -C images/amd64 build
+
+i386: ## Build i386 image
+	@$(MAKE) -C images/i386 build
 
 push: ## Push images to storage
 	@for dir in $(IMAGES); do $(MAKE) -C $$dir push; done

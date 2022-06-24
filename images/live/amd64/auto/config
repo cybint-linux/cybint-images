@@ -5,10 +5,6 @@ set -e
 ARCHITECTURE="$(basename $PWD)"
 ARCH="${ARCHITECTURE:=$(dpkg --print-architecture)}"
 
-# if [ ! -e "./cache" ]; then
-#     ln -s ../../../cache cache
-# fi
-
 if [ ! -e "/usr/share/live/build/data/debian-cd/cybint" ]; then
     ln -s /usr/share/live/build/data/debian-cd/squeeze /usr/share/live/build/data/debian-cd/cybint
 fi
@@ -46,8 +42,8 @@ lb config noauto \
 	--mode debian \
 	--updates false \
 	--security false \
-	--apt-secure false \
-	--apt-recommends false \
+	--apt-secure true \
+	--apt-recommends true \
 	--debian-installer live \
 	--debian-installer-gui false \
 	--image-name "cybint-live" \
@@ -57,6 +53,7 @@ lb config noauto \
 	--source-images iso \
 	--linux-packages "linux-image linux-headers" \
 	--bootappend-live "boot=live username=cybint hostname=cybint components quiet splash noeject" \
+    --bootappend-install "net.ifnames=0" \
     --keyring-packages "cybint-archive-keyring" \
     --archive-areas "main" \
     --debian-installer-distribution cybint \
