@@ -1,7 +1,0 @@
-76d838d17c791d4321514107c61480d7  lib/x86_64-linux-gnu/libcryptsetup.so.12.7.0
-4b52326d7c68659dbfa12e39080feaf1  usr/share/bug/libcryptsetup12
-4bd449d652e0d9fe3239c5d02603d47a  usr/share/doc/libcryptsetup12/NEWS.Debian.gz
-b96c6adb2fe03fc634cc69b5e62e4019  usr/share/doc/libcryptsetup12/changelog.Debian.amd64.gz
-9891704b49798f156a509845442e4f58  usr/share/doc/libcryptsetup12/changelog.Debian.gz
-8a6730f971c46efd70301b9849544e0e  usr/share/doc/libcryptsetup12/copyright
-06398de5d32d98a21f892876c088ae74  usr/share/lintian/overrides/libcryptsetup12
