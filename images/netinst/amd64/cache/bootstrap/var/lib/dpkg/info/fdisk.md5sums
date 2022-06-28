@@ -1,0 +1,12 @@
+cdc204419f161e65f0fca23dfb678112  sbin/cfdisk
+7f60811f594f49c5a6914395bc415d28  sbin/fdisk
+6064905455ec81cd411c16d7a2af7e14  sbin/sfdisk
+e6246ed6f6e8c0be96d38b1e300d4cab  usr/share/bash-completion/completions/cfdisk
+8a4d157f342ca88bc81d11e1714e5574  usr/share/bash-completion/completions/fdisk
+c246546d8bb26feff8486e63d4cb871d  usr/share/bash-completion/completions/sfdisk
+57518035f1e9ccd7a03a80f20407713f  usr/share/doc/fdisk/changelog.Debian.gz
+fc3c827cf27f27c70c58e1f6a6e33cf5  usr/share/doc/fdisk/changelog.gz
+353888f385cfb82eb97a693e78f3cc9b  usr/share/doc/fdisk/copyright
+3203d323ca2f60094010fbaed6a68923  usr/share/man/man8/cfdisk.8.gz
+5b31d9e41764c8af0366fc75baba342f  usr/share/man/man8/fdisk.8.gz
+c7cb973efd9a1dc0ba5555197111bbf4  usr/share/man/man8/sfdisk.8.gz

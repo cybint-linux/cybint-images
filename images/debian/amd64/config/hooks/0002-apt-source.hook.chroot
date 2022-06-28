@@ -1,0 +1,9 @@
+
+cat > /etc/apt/sources.list <<-EOF
+# /etc/apt/sources.list
+
+# CYBINT Linux
+deb http://repo.cybint-linux.com/cybint/ cybint main contrib non-free
+deb-src http://repo.cybint-linux.com/cybint/ cybint main main contrib non-free
+
+EOF
