@@ -9,7 +9,7 @@ clean: ## Remove build files
 build: clean ## Build ISO image
 	@sudo lb build
 
-vm: ## Run in a virtual machine
+vm: ## Create and run in a virtual machine
 	@qemu-img create -f qcow2 cybint-live-amd64.img 32G
 	@qemu-system-x86_64 -m 2048 -boot d -enable-kvm -smp 3 -net nic -net user -hda cybint-live-amd64.img -cdrom ./cybint-live-amd64.hybrid.iso
 
