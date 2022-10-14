@@ -1,5 +1,5 @@
 # CYBINT Linux
-deb http://repo.cybint-linux.com/cybint cybint main contrib non-free
+deb http://retupmoc:8080 cybint main contrib non-free
 
 # Additional line for source packages
-# deb-src http://repo.cybint-linux.com/cybint cybint main contrib non-free
+# deb-src http://retupmoc:8080 cybint main contrib non-free

@@ -9,6 +9,7 @@ lb clean noauto "${@}"
 umount -f -l  `mount -l | grep 'cybint-images' | cut -f3 -d' '` &>/dev/null
 
 # Remove build files
-rm -rf config/binary config/bootstrap config/chroot config/common config/source config/control
 rm -rf .build build.log chroot *.img *.iso
+rm -rf config/binary config/bootstrap config/chroot config/common config/source config/control
+
 

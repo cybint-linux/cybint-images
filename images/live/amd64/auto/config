@@ -42,7 +42,7 @@ lb config noauto \
 	--mode debian \
 	--updates false \
 	--security false \
-	--apt-secure true \
+	--apt-secure false \
 	--apt-recommends true \
 	--debian-installer live \
 	--debian-installer-gui false \
@@ -53,25 +53,26 @@ lb config noauto \
 	--source-images iso \
 	--linux-packages "linux-image linux-headers" \
 	--bootappend-live "boot=live username=cybint hostname=cybint components quiet splash noeject" \
-    --bootappend-install "net.ifnames=0" \
-    --keyring-packages "cybint-archive-keyring" \
+    --bootappend-install "net.ifnames=0"  \
     --archive-areas "main" \
     --debian-installer-distribution cybint \
-	--mirror-binary "http://repo.cybint-linux.com/cybint" \
-    --mirror-bootstrap "http://repo.cybint-linux.com/cybint" \
-    --mirror-chroot "http://repo.cybint-linux.com/cybint" \
-    --mirror-debian-installer "http://repo.cybint-linux.com/cybint" \
+	--mirror-binary "http://retupmoc:8080" \
+    --mirror-bootstrap "http://retupmoc:8080" \
+    --mirror-chroot "http://retupmoc:8080" \
+    --mirror-debian-installer "http://retupmoc:8080" \
     --parent-archive-areas "main" \
     --parent-debian-installer-distribution cybint \
     --parent-distribution cybint \
     --parent-distribution-chroot cybint \
     --parent-distribution-binary cybint \
-    --parent-mirror-binary "http://repo.cybint-linux.com/cybint" \
-    --parent-mirror-bootstrap "http://repo.cybint-linux.com/cybint" \
-    --parent-mirror-chroot "http://repo.cybint-linux.com/cybint" \
-    --parent-mirror-debian-installer "http://repo.cybint-linux.com/cybint" \
+    --parent-mirror-binary "http://retupmoc:8080" \
+    --parent-mirror-bootstrap "http://retupmoc:8080" \
+    --parent-mirror-chroot "http://retupmoc:8080" \
+    --parent-mirror-debian-installer "http://retupmoc:8080" \
 	--source false \
 "${@}"
+# --keyring-packages "cybint-archive-keyring"
+#http://retupmoc:8080
 
 	# --parent-mirror-chroot-security  "http://security.debian.org/" \
 	# --parent-mirror-bootstrap "http://repo.cybint-linux.com/cybint" \

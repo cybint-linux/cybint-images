@@ -1,3 +1,5 @@
-debian-installer-launcher
-linux-image-5.18.0
-firmware-linux
+#debian-installer-launcher
+#linux-image
+#firmware-linux
+# linux-image-5.18.0
+#calamares
