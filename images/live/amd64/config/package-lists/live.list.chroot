@@ -6,3 +6,4 @@ systemd-sysv
 # user-setup
 # sudo
 calamares
+calamares-settings-debian

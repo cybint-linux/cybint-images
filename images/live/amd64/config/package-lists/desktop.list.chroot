@@ -1,12 +1,12 @@
 task-xfce-desktop
 # task-print-server
 
-plymouth
-plymouth-x11
+#plymouth
+#plymouth-x11
 
 gstreamer1.0-vaapi
 i965-va-driver
-user-setup
+#user-setup
 
 #cybint-menu
 #cybint-docs
